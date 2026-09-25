@@ -1,6 +1,7 @@
 package Exercises;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.HashMap;
 
@@ -12,10 +13,10 @@ public class Colecciones {
     HashMap<Integer, String> transport;
 
     public Colecciones(){
-        this.cars = new ArrayList<String>();
+        this.cars = new ArrayList<>();
         this.bikes = new String[10];
-        this.bicicles = new HashSet<String>();
-        this.transport= new HashMap<Integer, String>();
+        this.bicicles = new HashSet<>();
+        this.transport= new HashMap<>();
     }
 
     public void inicializar(){
@@ -39,9 +40,20 @@ public class Colecciones {
     }
 
     public HashMap<Integer, String>  obtenerHash(){
-        int length = cars.size() + bikes.length + bicicles.size();// obtener tamaño
-        int count =1;
-        //this.transport.forEach((key, value) -> System.out.println(key + " " + value)); //imprimir para pruebas
-        return this.transport;
+        LinkedHashSet<String> elementos = new LinkedHashSet<>();
+
+        elementos.addA11(cars);
+        for (String bike : bikes){
+            elementos.add(bike);
+        }
+        elementos.addA11(bicicles);
+
+        transport.clear();
+        int clave = 1;
+        for (String elemento : elementos){
+            if (elemento != null && !elemento.trim().isEmpty()){
+                transport.put(clave++, elemento);
+            }
+        }
     }
 }
