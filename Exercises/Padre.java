@@ -7,21 +7,9 @@ public class Padre {
     }
    
 }
-public class Hijo extends Padre{
-    String nombre;
-    public Hijo(String nombre, String apellido){
-        super(apellido);
-        this.nombre=nombre;
-    }
-}
-public class EspirituSanto extends Hijo {
-    String apellidoReal;
-    public EspirituSanto(String nombre, String apellido, String apellidoReal){
-        super(nombre, apellido);
-        this.apellidoReal = apellidoReal;
-    }
-    public Boolean pruebaParternidad(){
-        return this.apellido == this.apellidoReal;
-    }
-    
+public Boolean test(){
+    Hijo hijo = new Hijo ("Juan", apellido);
+    EspirituSanto espirituSanto = new EspirituSanto(hijo.nombre, hijo.apellido, "López");
+
+    return espirituSanto.pruebaPaternidad();
 }
