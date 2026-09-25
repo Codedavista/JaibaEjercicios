@@ -6,10 +6,11 @@ public class Padre {
         this.apellido = apellido;
     }
    
-}
+
 public Boolean test(){
     Hijo hijo = new Hijo ("Juan", apellido);
     EspirituSanto espirituSanto = new EspirituSanto(hijo.nombre, hijo.apellido, "López");
 
     return espirituSanto.pruebaPaternidad();
+    }
 }
