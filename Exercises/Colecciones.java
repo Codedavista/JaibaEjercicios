@@ -10,7 +10,7 @@ public class Colecciones {
     ArrayList<String> cars ;
     String[] bikes;
     Set<String> bicicles;
-    HashMap<Integer, String> transport;
+    public HashMap<Integer, String> transport;
 
     public Colecciones(){
         this.cars = new ArrayList<>();
@@ -42,11 +42,11 @@ public class Colecciones {
     public HashMap<Integer, String>  obtenerHash(){
         LinkedHashSet<String> elementos = new LinkedHashSet<>();
 
-        elementos.addA11(cars);
+        elementos.addAll(cars);
         for (String bike : bikes){
             elementos.add(bike);
         }
-        elementos.addA11(bicicles);
+        elementos.addAll(bicicles);
 
         transport.clear();
         int clave = 1;
@@ -55,5 +55,6 @@ public class Colecciones {
                 transport.put(clave++, elemento);
             }
         }
+            return transport;
     }
 }

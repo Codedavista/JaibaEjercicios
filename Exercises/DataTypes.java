@@ -4,8 +4,8 @@ public class DataTypes {
     public String cadena;
     public int entero;
     public float flotante;
-    char caracter;
-    boolean boleano;
+    public char caracter;
+    public boolean boleano;
 
     public DataTypes(){
             this("Hola Mundo", 10, 5.9f, 'A', true);
