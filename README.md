@@ -188,13 +188,13 @@ calcular las reglas de préstamo de cada tipo de usuario.
 
 ## Lista de comprobación
 
-- [ ] El proyecto compila sin errores con `javac`.
-- [ ] `Tests.java` no fue modificado.
-- [ ] Cada clase pública está en su propio archivo.
-- [ ] Los métodos devuelven los tipos y valores esperados.
-- [ ] Se validan valores nulos, vacíos, repetidos o inválidos cuando aplica.
-- [ ] Las nuevas prácticas tienen sus propias pruebas.
-- [ ] El programa termina mostrando `true`.
+- [x] El proyecto compila sin errores con `javac`.
+- [x] `Tests.java` no fue modificado.
+- [x] Cada clase pública está en su propio archivo.
+- [x] Los métodos devuelven los tipos y valores esperados.
+- [x] Se validan valores nulos, vacíos, repetidos o inválidos cuando aplica.
+- [x] Las nuevas prácticas tienen sus propias pruebas.
+- [x] El programa termina mostrando `true`.
 
 ## Soluciones de referencia
 
